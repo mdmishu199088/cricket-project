@@ -37,7 +37,28 @@
         .field:hover .ball{
             transform: translateX(500px);
         }
-
+        /* for mobile version */
+        @media screen and (max-width:576px){
+            .field{
+                margin-top: 150px;
+            }
+            .bat{
+                height: 160px;
+                margin-left: -10px;
+                transition: transform 0.2s;
+            }
+            .ball{
+                width: 30px;
+                height: 30px;
+                margin-left: 170px;
+                box-shadow: 2px 2px 10px black;
+                position: relative;
+                bottom: 20px;
+            }
+            .field:hover .ball{
+            transform: translateX(150px);
+        }
+        }
     </style>
 </head>
 <body>
